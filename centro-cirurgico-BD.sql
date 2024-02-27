@@ -47,3 +47,4 @@ create table tbl_agenda (
     status_cirurgia ENUM ('agendado', 'concluído', 'cancelado')
 );
 
+#drop database centro_cirugurgico_bd;
