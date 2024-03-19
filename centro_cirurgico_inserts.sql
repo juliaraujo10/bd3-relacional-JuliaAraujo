@@ -1,11 +1,11 @@
 #INSERINDO DADOS NA TABELA ESPECIALIDADES.
-INSERT INTO tbl_especilidade(nome_especialidade)
+INSERT INTO tbl_especialidade(nome_especialidade)
 VALUES ('NEUROLOGIA');
 
-INSERT INTO tbl_especilidade(nome_especialidade)
+INSERT INTO tbl_especialidade(nome_especialidade)
 VALUES ('ORTOPEDIA');
 
-INSERT INTO tbl_especilidade(nome_especialidade)
+INSERT INTO tbl_especialidade(nome_especialidade)
 VALUES ('CARDIOLOGIA');
 
 #INSERÇÃO DE DADOS NA TABELA DE PACIENTES.

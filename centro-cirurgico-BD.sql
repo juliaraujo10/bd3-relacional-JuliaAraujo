@@ -1,22 +1,34 @@
-create database centro_cirugurgico_bd;
+create database centro_cirurgico_bd;
 
-USE centro_cirugurgico_bd;
+USE centro_cirurgico_bd;
 
-create table tbl_especilidade(
+create table tbl_especialidade (
 	cod_especialidade INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 	nome_especialidade VARCHAR(100) NOT NULL
 );
 
-create table tbl_paciente(
+create table tbl_paciente (
 	cod_paciente INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 	nome_paciente VARCHAR(500) NOT NULL,
     telefone_paciente VARCHAR(10) NULL,
     celular_paciente VARCHAR(11) NOT NULL,
     email_paciente VARCHAR(100) NOT NULL,
+    nome_responsavel VARCHAR(100) NOT NULL,
     telefone_responsavel VARCHAR(11) NOT NULL
 );
 
-create table tbl_medico(
+create table tbl_paciente_bkp (
+	cod_paciente INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	nome_paciente VARCHAR(500) NOT NULL,
+    telefone_paciente VARCHAR(10) NULL,
+    celular_paciente VARCHAR(11) NOT NULL,
+    email_paciente VARCHAR(100) NOT NULL,
+	nome_responsavel VARCHAR(100) NOT NULL,
+    telefone_responsavel VARCHAR(11) NOT NULL,
+    date_delete datetime
+);
+
+create table tbl_medico (
 	cod_medico INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 	nome_medico VARCHAR(500) NOT NULL,
     telefone_medico VARCHAR(10) NULL,
@@ -47,4 +59,4 @@ create table tbl_agenda (
     status_cirurgia ENUM ('agendado', 'concluído', 'cancelado')
 );
 
-#drop database centro_cirugurgico_bd;
+#drop database centro_cirurgico_bd;
